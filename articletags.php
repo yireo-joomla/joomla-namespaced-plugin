@@ -24,8 +24,6 @@ class PlgSystemArticleTags extends JPlugin
 	{
 		$this->includeLibraries();
 		$body = $this->app->getBody();
-
-		//return;
 		$body = $this->replaceTag($body);
 		$this->app->setBody($body);
 	}
